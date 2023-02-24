@@ -48,6 +48,7 @@ def is_collision(trial, orig_hash):
     return h == orig_hash
 
 def collide(startnumber):
+    print('[+] Processing...')
     ''' Search for collisions in the hash. Start with the possible match
         at index startnumber and look for collisions by searching upward
         from there.
@@ -100,3 +101,5 @@ if __name__ == '__main__':
         print('iteration of our cartesian product search algorithm on a')
         print('subset of the ASCII alphabet.')
 
+
+#86f7e45dbf6c85af9912e0f7984bb776cc29a0d1
