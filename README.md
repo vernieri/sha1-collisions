@@ -9,6 +9,7 @@ We implemented the birthday attack by searching across iterations of the upperca
 The code is written in Python 3.4 and uses the `sha` function from the `hexlib` library to search for collisions. It takes two arguments: the first is the maximum number of random bytes to use as input to the hash function, and the second is the number of bytes needed, starting at the beginning of the hash, for two inputs to be considered a collision.
 
 The way the code works is this: random hashes are generated, and the results of each hash are stored as keys in a dictionary (Python's implementation of the hash table data structure). This allows lookup of collisons for already generated hashes to happen in constant time. When a collision is found, the results are printed to the screen.
+<br>
 Gratz: Mr. nathantypanski, the creator of this code.
 
 ## Results
