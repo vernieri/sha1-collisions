@@ -16,7 +16,7 @@ Since the results only took a few seconds to run, we ran the program a few times
 
 According to Wikipedia^[`https://en.wikipedia.org/wiki/Birthday_attack`] the number of trials required to reach 50% chance of finding a collision can be found by
 $$n(0.5,2^{48}) \approx 1.1774 \sqrt{2^{48}} = 19.755 \times 10^6.$$
-This is basically in line with the 20 million figure we saw from our test runs.
+This is basically in line with the 20 million figure we saw from our test runs...
 
 ### Collision #1
 
