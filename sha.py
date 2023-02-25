@@ -4,6 +4,8 @@ from hashlib import sha1
 from binascii import hexlify
 from itertools import product
 from sys import argv
+import time
+
 
 POSSIBLE = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
@@ -85,7 +87,10 @@ if __name__ == '__main__':
         n = int(argv[1])
         if len(argv) > 2:
             HASHCHARS=int(argv[2])
+        start = time.time()   
         collide(n)
+        end = time.time()
+        print('Processing Time Lapsed in seconds = ', end - start)        
     else:
         print('Please pass an integer as the argument to this program.')
         print()
